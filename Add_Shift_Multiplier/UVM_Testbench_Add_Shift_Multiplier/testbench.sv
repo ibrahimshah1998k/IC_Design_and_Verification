@@ -1,5 +1,5 @@
 `timescale 10ns/10ps
-`include "mul_interface.sv"
+`include "mul_axi_stream_interface.sv"
 `include "mul_package.sv"
 
 module testbench;
