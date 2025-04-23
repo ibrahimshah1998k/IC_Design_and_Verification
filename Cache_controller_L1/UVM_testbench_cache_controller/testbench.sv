@@ -1,5 +1,5 @@
-`include "mem_interface.sv"
-`include "mem_package.sv"
+`include "cc_interface.sv"
+`include "cc_package.sv"
 
 module tbench_top;
 
