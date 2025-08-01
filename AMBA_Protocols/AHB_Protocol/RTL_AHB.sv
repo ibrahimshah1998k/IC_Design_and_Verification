@@ -125,7 +125,11 @@ module AHB (
             HADDR_S[j]=HADDR[k];
             HWRITE_S[j]=HWRITE[k];
             HREADY[k]=HREADY_S[j];
-            next_state=data_p;
+            if (HREADY_S[j])
+              begin
+                next_state=data_p;
+                HREADY[k] = 1;
+              end
           end //address_p ended here
         
         data_p:
